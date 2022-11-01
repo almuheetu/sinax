@@ -1,0 +1,59 @@
+@use "../abstract" as *;
+
+.video-area{
+  
+}
+.video{
+    height: 763px;
+    &__content{
+       & h2{
+        color: $white;
+        font-size: 48px;
+        font-weight: 600;
+        padding-top: 270px;
+        padding-right: 180px;
+        padding-left: 180px;
+        @media #{$laptop}{
+            padding-right: 100px;
+            padding-left: 100px;
+        }
+        @media #{$lg}{
+            padding-right: 100px;
+            padding-left: 100px;
+        }
+        @media #{$md}{
+            padding-right: 100px;
+            padding-left: 100px;
+        }
+        @media #{$sm}{
+            padding-right: 0px;
+            padding-left: 0px;
+            font-size: 35px;
+        }
+        @media #{$xs}{
+            padding-right: 0px;
+            padding-left: 0px;
+            font-size: 30px;
+        }
+       }
+    }
+    &__icon{
+        & a{
+            font-size: 25px;
+            color: #000;
+            height: 70px;
+            width: 70px;
+            text-align: center;
+            line-height: 75px;
+            background: #ffffff;
+            display: inline-block;
+            border-radius: 100%;
+            margin-top: 30px;
+            @include transition (0.3s);
+            &:hover{
+                background: $theme-color;
+                color: $white;
+            }
+        }
+    }
+}
